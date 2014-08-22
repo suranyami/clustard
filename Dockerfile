@@ -31,8 +31,7 @@ RUN mix local.hex --force
 RUN mix local.rebar --force
 RUN mix deps.get --verbose
 ENV MIX_ENV prod
+RUN mix phoenix.start &
 
 # Allow HTTP access
 EXPOSE 4000
-
-CMD ["mix", "phoenix.start"]
