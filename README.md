@@ -11,5 +11,5 @@ boot2docker up
 ```bash
 docker build -t websockets_elixir .
 
-docker run -ti -P -p 80:80 --name websockets_elixir websockets_elixir
+docker run -t -P -p 4000:4000 --name websockets_elixir websockets_elixir
 ```
